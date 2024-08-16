@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="rounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="sty_tittle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/moonstone</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:shadowColor">@color/salmon</item>
+        <item name="android:shadowDx">3</item>
+        <item name="android:shadowDy">3</item>
+        <item name="android:shadowRadius">3</item>
+    </style>
+    <style name="sty_ly">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="sty_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/gunmetal</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="sty_et">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/moonstone</item>
+        <item name="android:ems">4</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColorHint">@color/salmon</item>
+        <item name="android:textColor">@color/salmon</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="sty_btn">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:backgroundTint">@color/platinum</item>
+        <item name="android:tint">@color/salmon</item>
+    </style>
+</resources>

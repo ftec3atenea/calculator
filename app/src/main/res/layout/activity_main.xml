@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/platinum"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        app:shapeAppearanceOverlay="@style/rounded"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/gunmetal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/atenea" />
+
+    <TextView
+        android:id="@+id/tittle"
+        style="@style/sty_tittle"
+        android:text="@string/welcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <LinearLayout
+        android:id="@+id/ly1"
+        style="@style/sty_ly"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tittle">
+
+        <LinearLayout
+            style="@style/sty_ly"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/sty_tv"
+                android:text="Escribe tu primer número: " />
+
+            <EditText
+                android:id="@+id/number1"
+                style="@style/sty_et"
+                android:hint="número 1"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/sty_ly"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv2"
+                style="@style/sty_tv"
+                android:text="Escribe tu segundo número: " />
+
+            <EditText
+                android:id="@+id/number2"
+                style="@style/sty_et"
+                android:hint="número 2"
+                android:inputType="number" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="casual"
+        android:shadowColor="@color/moonstone"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:text="¿Qué operación deseas realizar?"
+        android:textColor="@color/gunmetal"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ly1" />
+
+    <LinearLayout
+        android:id="@+id/ly2"
+        style="@style/sty_ly"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question">
+
+        <ImageButton
+            android:id="@+id/add"
+            style="@style/sty_btn"
+            app:srcCompat="@drawable/circle_plus_solid" />
+
+        <ImageButton
+            android:id="@+id/subtract"
+            style="@style/sty_btn"
+            app:srcCompat="@drawable/circle_minus_solid" />
+
+        <ImageButton
+            android:id="@+id/multiply"
+            style="@style/sty_btn"
+            app:srcCompat="@drawable/circle_xmark_solid" />
+
+        <ImageButton
+            android:id="@+id/divide"
+            style="@style/sty_btn"
+            app:srcCompat="@drawable/divide_solid" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        style="@style/sty_tittle"
+        android:text="Resultado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ly2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
