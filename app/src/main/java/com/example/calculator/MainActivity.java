@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 float res = num1 * num2;
                 // indicarle al usuario que se realizó la operación
                 Toast.makeText(this, "¡Multiplicación hecha!", Toast.LENGTH_SHORT).show();
-                // mostrar el resultado
+                // mostrar el resultado de multi
                 result.setText("Resultado: " + res);
                 // vibracion
                 result.startAnimation(vibrate);

@@ -7,10 +7,10 @@
     <style name="sty_tittle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textAlignment">center</item>
-        <item name="android:textColor">@color/moonstone</item>
         <item name="android:textSize">34sp</item>
         <item name="android:fontFamily">cursive</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/moonstone</item>
         <item name="android:shadowColor">@color/salmon</item>
         <item name="android:shadowDx">3</item>
         <item name="android:shadowDy">3</item>

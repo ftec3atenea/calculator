@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#010101</color>
     <color name="white">#FFFFFF</color>
+    <color name="black">#010101</color>
     <color name="gunmetal">#1F2B2C</color>
     <color name="salmon">#DA8270</color>
     <color name="moonstone">#2FA1AF</color>
